@@ -1,0 +1,249 @@
+@media (max-width: 900px) {
+
+    .location {
+
+        display: none;
+
+    }
+
+    .product-grid {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .nav-top {
+
+        flex-wrap: wrap;
+
+        padding: 9px 12px;
+
+    }
+
+
+    .logo {
+
+        font-size: 23px;
+
+    }
+
+
+    .header-actions {
+
+        gap: 5px;
+
+    }
+
+
+    .search-area {
+
+        order: 5;
+
+        flex-basis: 100%;
+
+    }
+
+
+    .nav-bottom {
+
+        gap: 18px;
+
+    }
+
+
+    .hero {
+
+        margin: 15px 12px;
+
+        min-height: 260px;
+
+        padding: 25px;
+
+    }
+
+
+    .hero-art {
+
+        font-size: 65px;
+
+    }
+
+
+    .hero-art span {
+
+        font-size: 40px;
+
+        margin-left: 40px;
+
+    }
+
+
+    .product-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 11px;
+
+        padding: 0 12px;
+
+    }
+
+
+    .product-slider {
+
+        padding-left: 12px;
+
+    }
+
+
+    .product-slider .product-card {
+
+        min-width: 78vw;
+
+    }
+
+
+    .deal-banner {
+
+        margin: 20px 12px;
+
+        padding: 20px;
+
+    }
+
+
+    .deal-icons {
+
+        font-size: 35px;
+
+    }
+
+
+    .details-card {
+
+        grid-template-columns: 1fr;
+
+        padding: 18px;
+
+    }
+
+
+    .details-image {
+
+        min-height: 280px;
+
+    }
+
+
+    .details-content h1 {
+
+        font-size: 27px;
+
+    }
+
+
+    .details-price {
+
+        font-size: 27px;
+
+    }
+
+}
+
+
+@media (max-width: 400px) {
+
+    .nav-icon,
+    .profile-btn {
+
+        width: 37px;
+
+        height: 37px;
+
+    }
+
+
+    .search-area select {
+
+        width: 65px;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .hero-art {
+
+        font-size: 50px;
+
+    }
+
+
+    .product-grid {
+
+        gap: 8px;
+
+    }
+
+
+    .product-image {
+
+        height: 140px;
+
+    }
+
+
+    .product-icon {
+
+        font-size: 55px;
+
+    }
+
+
+    .product-info {
+
+        padding: 9px;
+
+    }
+
+
+    .product-info h3 {
+
+        font-size: 12px;
+
+    }
+
+
+    .price {
+
+        font-size: 17px;
+
+    }
+
+
+    .amazon-btn {
+
+        font-size: 10px;
+
+    }
+
+
+    .details-actions {
+
+        flex-direction: column;
+
+    }
+
+}

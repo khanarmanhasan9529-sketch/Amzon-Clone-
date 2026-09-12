@@ -1,0 +1,143 @@
+.product-card,
+.category-card,
+.primary-btn,
+.secondary-btn,
+.amazon-btn,
+.nav-icon,
+.profile-btn {
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease,
+        opacity .2s ease;
+
+}
+
+
+.product-card:hover {
+
+    transform:
+        translateY(-6px);
+
+    box-shadow:
+        0 12px 30px
+        rgba(0,0,0,.15);
+
+}
+
+
+.category-card:hover {
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 8px 20px
+        rgba(0,0,0,.12);
+
+}
+
+
+.primary-btn:hover,
+.amazon-btn:hover {
+
+    transform:
+        translateY(-2px);
+
+    filter:
+        brightness(1.08);
+
+}
+
+
+.nav-icon:hover,
+.profile-btn:hover {
+
+    transform:
+        scale(1.08);
+
+}
+
+
+.heart:hover {
+
+    transform:
+        scale(1.12);
+
+}
+
+
+.hero {
+
+    animation:
+        heroIn .7s ease both;
+
+}
+
+
+.product-card {
+
+    animation:
+        cardIn .5s ease both;
+
+}
+
+
+@keyframes heroIn {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(25px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+@keyframes cardIn {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(15px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+@media (hover: none) {
+
+    .product-card:hover,
+    .category-card:hover {
+
+        transform: none;
+
+        box-shadow: none;
+
+    }
+
+}

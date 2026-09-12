@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Amazon Deals - Arman</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="nav-top">
+
+        <a href="index.html" class="logo">
+            amazon<span>deals</span>
+        </a>
+
+        <div class="location">
+            <span>📍</span>
+            <div>
+                <small>Deliver to</small>
+                <strong>Beed 431122</strong>
+            </div>
+        </div>
+
+        <div class="search-area">
+
+            <select id="searchCategory">
+                <option value="all">All</option>
+                <option value="mobiles">Mobiles</option>
+                <option value="electronics">Electronics</option>
+                <option value="fashion">Fashion</option>
+                <option value="gaming">Gaming</option>
+                <option value="home">Home</option>
+            </select>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products, brands and more..."
+            >
+
+            <button id="searchBtn">🔍</button>
+
+        </div>
+
+        <button id="themeBtn" class="nav-icon">
+            🌙
+        </button>
+
+        <button id="colorBtn" class="nav-icon">
+            🎨
+        </button>
+
+        <a href="profile.html" class="profile-btn">
+            👤
+        </a>
+
+    </div>
+
+    <div class="nav-bottom">
+
+        <button id="menuBtn">
+            ☰ All
+        </button>
+
+        <a href="index.html">Today's Deals</a>
+        <a href="category.html?name=Mobiles">Mobiles</a>
+        <a href="category.html?name=Electronics">Electronics</a>
+        <a href="category.html?name=Fashion">Fashion</a>
+        <a href="category.html?name=Gaming">Gaming</a>
+
+        <a href="profile.html">
+            ❤️ Wishlist
+            <span id="wishlistCount">0</span>
+        </a>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="hero-label">
+                TODAY'S DEALS
+            </span>
+
+            <h1>
+                Shop smarter.
+                <br>
+                <span>Live better.</span>
+            </h1>
+
+            <p>
+                Discover great products and better deals.
+            </p>
+
+            <button class="primary-btn" onclick="openRetailer()">
+                Shop Now →
+            </button>
+
+        </div>
+
+        <div class="hero-art">
+            📦
+            <span>🛍️</span>
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <h2>Top Categories</h2>
+
+            <a href="category.html?name=all">
+                See All →
+            </a>
+
+        </div>
+
+        <div id="categoryList" class="category-slider"></div>
+
+    </section>
+
+
+    <!-- DEAL BANNER -->
+
+    <section class="deal-banner">
+
+        <div>
+            <h2>Big Deals</h2>
+
+            <h3>
+                Up to 50% Off
+            </h3>
+
+            <p>
+                On selected products
+            </p>
+
+            <button onclick="openRetailer()">
+                Explore Deals →
+            </button>
+        </div>
+
+        <div class="deal-icons">
+            🎧 ⌚ 📱
+        </div>
+
+    </section>
+
+
+    <!-- POPULAR PRODUCTS -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <h2>Popular Products</h2>
+
+            <span>
+                Swipe →
+            </span>
+
+        </div>
+
+        <div id="horizontalProducts"
+             class="product-slider">
+        </div>
+
+    </section>
+
+
+    <!-- ALL PRODUCTS -->
+
+    <section class="section">
+
+        <div class="section-title">
+
+            <h2>All Products</h2>
+
+            <span id="productCount">
+                0 items
+            </span>
+
+        </div>
+
+        <div id="productGrid"
+             class="product-grid">
+        </div>
+
+    </section>
+
+
+    <!-- INFO -->
+
+    <section class="info-card">
+
+        <div class="info-icon">
+            🛒
+        </div>
+
+        <div>
+            <h3>
+                Shop smarter with Amazon Deals
+            </h3>
+
+            <p>
+                Discover products and continue your purchase
+                through the retailer.
+            </p>
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="footer-line"></div>
+
+    <h3>
+        👨‍💻 Developer: Arman
+    </h3>
+
+    <p>
+        Amazon Affiliate Shopping Website
+    </p>
+
+    <a href="https://amazon-deals-theta.vercel.app/"
+       target="_blank">
+        Website / Affiliate ↗
+    </a>
+
+    <p class="copyright">
+        © 2026 Arman. All rights reserved.
+    </p>
+
+</footer>
+
+
+<script src="js/products.js"></script>
+<script src="js/wishlist.js"></script>
+<script src="js/theme.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
