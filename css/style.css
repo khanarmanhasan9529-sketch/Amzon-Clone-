@@ -1197,4 +1197,54 @@ footer a {
 
     margin-top: 15px;
 
+}/* =========================
+   AMAZON STYLE NAVBAR
+========================= */
+
+.navbar {
+    width: 100%;
+    background: #232f3e;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+.navbar::-webkit-scrollbar {
+    display: none;
+}
+
+.navbar a,
+.nav-item {
+    flex: 0 0 auto;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 14px;
+    border-radius: 8px;
+    transition: 0.25s ease;
+}
+
+.navbar a:hover,
+.nav-item:hover {
+    background: rgba(255,255,255,0.12);
+    transform: translateY(-2px);
+}
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 8px 10px;
+        gap: 4px;
+    }
+
+    .navbar a,
+    .nav-item {
+        font-size: 14px;
+        padding: 9px 12px;
+    }
 }
